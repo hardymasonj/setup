@@ -15,7 +15,7 @@ config.window_close_confirmation = "NeverPrompt"
 config.enable_wayland = true
 
 if helpers.is_windows() then
-	config.default_prog = { "pwsh.exe", "-NoLogo" }
+	config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l" }
 end
 
 -- Always maximize on startup

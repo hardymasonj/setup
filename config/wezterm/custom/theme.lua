@@ -1,6 +1,5 @@
 local helpers = require("utils.helpers")
 local wezterm = require("wezterm")
-local rose_pine = wezterm.plugin.require("https://github.com/neapsix/wezterm")
 local Module = {}
 
 Module.setup = function(config)
@@ -12,7 +11,7 @@ Module.setup = function(config)
 	config.tab_max_width = 16
 	config.switch_to_last_active_tab_when_closing_tab = true
 
-	config.colors = helpers.is_dark() and rose_pine.moon.colors() or rose_pine.dawn.colors()
+	config.color_theme = "Afterglow"
 
 	config.window_frame = {
 		-- font = wezterm.font("Fira Code"),
